@@ -1,11 +1,12 @@
 FROM dylanlindgren/docker-phpcli:latest
 
-MAINTAINER "Dylan Lindgren" <dylan.lindgren@gmail.com>
+MAINTAINER "Dmitry Momot" <mail@dmomot.com>
 
 WORKDIR /tmp
 
 RUN apt-get update -y && \
     apt-get install -y \
+    php5-curl \
     php5-mcrypt \
     php5-mongo \
     php5-mssql \
